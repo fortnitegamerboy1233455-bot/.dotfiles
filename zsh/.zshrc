@@ -106,5 +106,5 @@ source $ZSH/oh-my-zsh.sh
   alias rem="sudo pacman -Rns"
   alias install="sudo pacman -S"
   alias fast="fastfetch"
-  alias ya="yazi"
   alias vi="vim"
+  alias lla="ls -laA --color=auto"
