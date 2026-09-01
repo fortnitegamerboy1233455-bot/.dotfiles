@@ -1,6 +1,6 @@
 [general]
 import = [
-  "~/.config/alacritty/themes/themes/duskfox.toml"
+  "~/.config/alacritty/themes/themes/challenger_deep.toml"
 ]
 
 [window]
@@ -10,6 +10,7 @@ opacity = 1.0
 
 [font]
 size = 18
+normal = { familly = "JetBrains Mono", style = "Bold" }
 
 [scrolling]
 history = 3023
