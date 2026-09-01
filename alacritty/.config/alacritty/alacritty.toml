@@ -10,7 +10,7 @@ opacity = 1.0
 
 [font]
 size = 18
-normal = { familly = "JetBrains Mono", style = "Bold" }
+normal = { family = "JetBrains Mono", style = "Bold" }
 
 [scrolling]
 history = 3023
