@@ -108,3 +108,4 @@ source $ZSH/oh-my-zsh.sh
   alias fast="fastfetch -c examples/16"
   alias vi="vim"
   alias lla="ls -laA --color=auto"
+  eval "$(starship init zsh)"
