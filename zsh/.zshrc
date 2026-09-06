@@ -5,10 +5,8 @@
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -69,8 +67,6 @@ ZSH_THEME="arrow"
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-
-source <(fzf --zsh)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
