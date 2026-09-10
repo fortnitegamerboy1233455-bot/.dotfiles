@@ -16,11 +16,22 @@
         "tray",
         "custom/power"
      ],
-   
-     "modules-right": [
-    ],
+     "modules-left": [
+        "niri/workspaces",
+     ],
+  "niri/workspaces": {
+    "disable-scroll": true,
+    "active-only": false,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "active": "󰐙 ",
+      "default": "󰍷 ",
 
-   "tray": {
+     },
+    }, 
+     "tray": {
         // "icon-size": 21,
         "spacing": 10,
         // "icons": {
