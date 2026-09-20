@@ -32,8 +32,12 @@ foreground = "#2A173B"
 background = "#0D060F"
 
 [colors.cursor]
-cursor = "#EFB3AF"
-text = "#A77188"
+cursor = "#A77188"
+text = "#EFB3AF"
+
+[colors.selection]
+background = "#A77188"
+text = "CellForeground"
 
 [colors.normal]
 magenta = "#2A173B"
@@ -41,7 +45,7 @@ blue = "#4A294D"
 yellow = "#704C68"
 red = "#EFB3AF"
 cyan = "#A77188"
-black = "#0D060F"
+black = "#1E0A20"
 
 [colors.bright]
 magenta = "#2A173B"
@@ -49,7 +53,7 @@ blue = "#4A294D"
 yellow = "#704C68"
 red = "#EFB3AF"
 cyan = "#A77188"
-black = "#0D060F"
+black = "#220C24"
 
 [keyboard]
 bindings = [
