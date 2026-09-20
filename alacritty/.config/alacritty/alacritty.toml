@@ -1,7 +1,5 @@
 [general]
-import = [
-  "~/.config/alacritty/themes/themes/challenger_deep.toml"
-]
+import = []
 
 [window]
 decorations = "None"
@@ -28,6 +26,30 @@ save_to_clipboard = false
 
 [bell]
 duration = 0
+
+[colors.primary]
+foreground = "#2A173B"
+background = "#0D060F"
+
+[colors.cursor]
+cursor = "#EFB3AF"
+text = "#A77188"
+
+[colors.normal]
+magenta = "#2A173B"
+blue = "#4A294D"
+yellow = "#704C68"
+red = "#EFB3AF"
+cyan = "#A77188"
+black = "#0D060F"
+
+[colors.bright]
+magenta = "#2A173B"
+blue = "#4A294D"
+yellow = "#704C68"
+red = "#EFB3AF"
+cyan = "#A77188"
+black = "#0D060F"
 
 [keyboard]
 bindings = [
