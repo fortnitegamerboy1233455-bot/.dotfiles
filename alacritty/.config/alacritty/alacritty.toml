@@ -28,7 +28,7 @@ save_to_clipboard = false
 duration = 0
 
 [colors.primary]
-foreground = "#2A173B"
+foreground = "#EFB3AF"
 background = "#0D060F"
 
 [colors.cursor]
@@ -45,15 +45,15 @@ blue = "#4A294D"
 yellow = "#704C68"
 red = "#EFB3AF"
 cyan = "#A77188"
-black = "#1E0A20"
+black = "#F6C4CE"
 
 [colors.bright]
-magenta = "#2A173B"
-blue = "#4A294D"
-yellow = "#704C68"
-red = "#EFB3AF"
-cyan = "#A77188"
-black = "#220C24"
+magenta = "#80576F"
+blue = "#825C87"
+yellow = "#F7B59E"
+red = "#5C143A"
+cyan = "#72465C"
+black = "#472B1F"
 
 [keyboard]
 bindings = [
