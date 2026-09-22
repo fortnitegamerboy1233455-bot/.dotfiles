@@ -36,7 +36,7 @@ cursor = "#A77188"
 text = "#EFB3AF"
 
 [colors.selection]
-background = "#A77188"
+background = "#2A173B"
 text = "CellForeground"
 
 [colors.normal]
