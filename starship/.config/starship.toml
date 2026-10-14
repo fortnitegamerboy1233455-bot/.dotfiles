@@ -1,18 +1,20 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+$time\
 $username\
 """
+
 right_format ="""
 $git_branch\
 $git_status\
-$time\
 $directory\
 """
+
 [username]
 style_user = 'fg:#653e76'
 show_always = true
-format = '[ ]($style)'
+format = '[> ]($style)'
 disabled = false
 
 [time]
