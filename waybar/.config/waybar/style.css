@@ -1,33 +1,22 @@
-@define-color base     #1B091D;
-@define-color mantle    #181825;
-@define-color crust     #11111b;
-
-@define-color text      #cdd6f4;
-@define-color subtext0  #a6adc8;
-@define-color subtext1  #bac2de;
-@define-color overlay0  #6c7086;
-
-@define-color surface0  #313244;
-@define-color surface1  #45475a;
-
-@define-color mauve     #cba6f7;
-@define-color lavender  #4A294D;
-@define-color blue      #89b4fa;
-@define-color teal      #94e2d5;
-@define-color green     #a6e3a1;
-@define-color yellow    #f9e2af;
-@define-color peach     #fab387;
-@define-color red       #f38ba8;
+@define-color background rgba(17, 18, 17, 0.88);
+@define-color surface    #292925;
+@define-color text       #e8e3d2;
+@define-color muted      #aaa89b;
+@define-color gold       #d8cfaa;
+@define-color sage       #aeb3a3;
+@define-color mauve      #aa9394;
+@define-color border     #77766d;
+@define-color alert      #d58f83;
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family:"JetBrainsMono Nerd Font";
-    font-size: 15px;
+    font-size: 18px;
 }
 
 window#waybar {
-    background-color: @base;
-    border-bottom: 1px solid @lavender;
+    background-color: @background;
+    border-bottom: 1px solid @border;
 }
 
 window#waybar.hidden {
@@ -88,34 +77,50 @@ button:hover {
 }
 
 #workspaces {
-    padding: 2px 6px;
+  border: 0.5px solid alpha(@foreground, 0.8);
+  border-radius: 4px;
+  background-color: alpha(@background, 1);
+  opacity: 1;
+  margin: 0px;
+  padding: 1px 1px 1px;
+  min-height: 0px;
 }
 
 #workspaces button {
-    padding: 2px 8px;
-    margin: 2px;
-    border-radius: 8px;
-    color: @subtext1;
-    font-size: 20px;
-    transition: all 0.2s ease-in-out;
+  padding: 0px 15px;
+  margin: 1px 1px;
+  border-radius: 2px;
+  background-color: alpha(@foreground, 0.5);
+  color: @gold; 
+  transition: all 0.15s ease-in-out;
+  opacity: 0.95;
 }
 
 #workspaces button.empty {
-    color: @overlay0;
+  background-color: alpha(@foreground, 0.4);
+  color: @foreground;
+  opacity: 0.45;
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out;
 }
 
 #workspaces button.active {
-    color: @mauve;
-    font-weight: bold;
+  color: @sage;
+  padding: 0 15px;
+  margin: 1px 1px;
+  background-color: alpha(@foreground, 0.9);
+  border-radius: 2px;
+  opacity: 1.0;
+  transition: all 0.15s ease-in-out;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
-    color: @crust;
+    background-color: @mauve;
+    color: @muted;
 }
 
 #clock {
-    color: @blue;
+    color: @gold;
 }
 
 label:focus {
@@ -127,39 +132,39 @@ label:focus {
 }
 
 #memory {
-    color: @green;
+    color: @sage;
 }
 
 #disk {
-    background-color: @lavender;
+    background-color: @muted;
 }
 
 #pulseaudio {
-    color: @red;
+    color: @surface;
 }
 
 #pulseaudio.muted {
-    color: @yellow;
+    color: @sage;
 }
 
 #wireplumber {
-    color: @mantle;
+    color: @gold;
 }
 
 #wireplumber.muted {
-    color: @teal;
+    color: @text;
 }
 
 #temperature {
-    color: @green;
+    color: @surface;
 }
 
 #temperature.critical {
-    color: @mauve;
+    color: @alert;
 }
 
 #tray {
-    color: @base;
+    color: @muted;
 }
 
 #tray > .passive {
@@ -168,7 +173,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @red;
+    background-color: @alert;
     border-radius: 8px;
 }
 
