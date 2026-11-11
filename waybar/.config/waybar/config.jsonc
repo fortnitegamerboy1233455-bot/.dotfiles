@@ -20,10 +20,11 @@
         "sway/workspaces",
      ],
   "sway/workspaces": {
-    "disable-scroll": true,
+    "disable-scroll": false,
     "active-only": false,
     "cursor": true,
     "format": "{icon}",
+    "sort-by-number": true,
    "persistent-workspaces": {
 	"1": [],
 	"2": [],
