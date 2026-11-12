@@ -90,9 +90,9 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
- alias upd="sudo pacman -Syu"
- alias rem="sudo pacman -Rns"
- alias install="sudo pacman -S"
+ alias upd="sudo dnf upgrade"
+ alias rem="sudo dnf remove"
+ alias install="sudo dnf install"
  alias fa="fastfetch -c examples/16"
  alias vi="vim"
  alias lla="ls -laA --color=auto"
